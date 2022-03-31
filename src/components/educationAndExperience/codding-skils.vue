@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center">
-    <v-col cols="6" lg="6">
+    <v-col cols="12" lg="6" md="6" sm="6" xl="8">
       <h2>Codding skills</h2>
       <v-col v-for="skill in coddingSkills" :key="skill.id">
         <h3>{{ skill.skillsName }}</h3>

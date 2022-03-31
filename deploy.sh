@@ -11,7 +11,7 @@ cd dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'new deploy'
 
 git push -f git@github.com:Andriy145-sys/my_portfolio.git master:gh-pages
 

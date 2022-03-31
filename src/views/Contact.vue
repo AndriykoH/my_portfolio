@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex align-center" style="min-height: 70vh">
-    <v-row justify="center" class="px-15">
+    <v-row justify="center" :class="!$vuetify.breakpoint.xs ? 'px-15' : 'px-3'">
       <my-contact-info />
       <v-spacer></v-spacer>
       <contact-form />

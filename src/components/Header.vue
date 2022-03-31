@@ -18,9 +18,10 @@
       class="hidden-md-and-up ml-auto"
       @click="sidebar = !sidebar"
     ></v-app-bar-nav-icon>
+    <v-expand-x-transition>
       <v-navigation-drawer
         absolute
-        style="margin-top:48px"
+        style="margin-top: 48px"
         v-model="sidebar"
         v-if="sidebar && $vuetify.breakpoint.xs"
         color="#9fddae"
@@ -40,6 +41,7 @@
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
+    </v-expand-x-transition>
   </v-app-bar>
 </template>
 
