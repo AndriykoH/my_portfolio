@@ -20,19 +20,18 @@
     ></v-app-bar-nav-icon>
     <v-expand-x-transition>
       <v-navigation-drawer
+      class="test"
         absolute
-        style="margin-top: 48px"
+        right
         v-model="sidebar"
         v-if="sidebar && $vuetify.breakpoint.xs"
         color="#9fddae"
         app
-        clipped
-        right
+        style="margin-top:48px;"
       >
         <v-list>
           <v-list-item
             active-class="font-weight-bold"
-            class="white--text"
             exact
             v-for="menuItem in menuItems"
             :key="menuItem.id"

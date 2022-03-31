@@ -1,23 +1,19 @@
 <template>
-  <div>
-    <Header />
-    <v-app>
-      <v-main>
-        <router-view />
-      </v-main>
-    </v-app>
+  <v-app>
+    <Header class="header"/>
+    <router-view />
     <Footer />
-  </div>
+  </v-app>
 </template>
 
 <script>
 import Header from "@/components/Header";
-import Footer from '@/components/Footer';
+import Footer from "@/components/Footer";
 export default {
   name: "App",
   components: {
     Header,
-    Footer
+    Footer,
   },
 };
 </script>
@@ -29,9 +25,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 * {
   font-family: "Comic Sans MS", "Comic Sans", "cursive";
+}
+.header {
+  margin-bottom: 60px;
+}
+body {
+  overflow-x: hidden;
 }
 </style>
