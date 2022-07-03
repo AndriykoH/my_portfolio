@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Header class="header"/>
-    <router-view />
+    <router-view style="height: 100%"/>
     <Footer />
   </v-app>
 </template>
@@ -31,6 +31,7 @@ export default {
 }
 .header {
   margin-bottom: 60px;
+  height: 10%;
 }
 body {
   overflow-x: hidden;

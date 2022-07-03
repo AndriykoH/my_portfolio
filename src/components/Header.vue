@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar dense color="#9fddae" style="z-index: 30%" clipped-right>
+  <v-app-bar dense color="#9fddae" style="z-index: 30" clipped-right>
     <v-app-bar-title class="name">Holinskiy Andriy</v-app-bar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items v-if="!$vuetify.breakpoint.xs"
@@ -20,14 +20,13 @@
     ></v-app-bar-nav-icon>
     <v-expand-x-transition>
       <v-navigation-drawer
-      class="test"
         absolute
         right
         v-model="sidebar"
         v-if="sidebar && $vuetify.breakpoint.xs"
         color="#9fddae"
         app
-        style="margin-top:48px;"
+        style="margin-top: 48px"
       >
         <v-list>
           <v-list-item
