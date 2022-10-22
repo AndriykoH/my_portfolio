@@ -61,6 +61,11 @@ export default {
       },
       {
         id: 3,
+        title: "Portfolio",
+        path: "/portfolio",
+      },
+      {
+        id: 3,
         title: "Contact",
         path: "/contact",
       },
